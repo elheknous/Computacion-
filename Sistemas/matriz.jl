@@ -1,6 +1,3 @@
-using Plots
-
-
 # Problem definition
 α = 1;
 β = 1;
@@ -27,7 +24,7 @@ function fillmat!(A)
   
   # Create Undefined Matrix and fill values
   A = zeros(m,m)
-  fillmat!(A)
+  fillmat!(A) #Se llama a la funcion para rellenar
     
   # Create Right-hand side  
   F = Array{Float64}(undef,m)  
@@ -36,11 +33,10 @@ function fillmat!(A)
   end
   F[1] = F[1] - α
   F[m] = F[m] - β
-  
-  u = A\F;
-  a = - exp(0) + α;
-  b = β - a - exp(1);
-  u_exact(x) = exp(x) + a + b*x
 
-  plot(x,u_exact.(x),marker=8, markeralpha=0.1, label="Exact Solution",legend=:outertopright)
-  plot!(x,[α; u; β],marker=4, label="Numerical Solution")
+  i = [2 6 1;1 2 -1 ;5 7 -4]
+  b = [7 ; -1 ;9]
+  l = i\b
+
+
+  u = A\F # Aqui se resulve el sistema
