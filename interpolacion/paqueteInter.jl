@@ -1,4 +1,3 @@
-import Pkg; Pkg.add("Interpolations")
 using Interpolations
 using Plots
 
