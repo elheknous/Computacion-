@@ -30,6 +30,7 @@ f(x) = 1/(1 + 16*x^2)
 
 using Plots
 
+
 # Sampling
 n = 15;
 xnodes = EquispacedNodes(n);
