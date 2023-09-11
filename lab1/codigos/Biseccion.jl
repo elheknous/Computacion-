@@ -11,7 +11,7 @@ function biseccion(f :: Function, a:: Number, b:: Number, error :: AbstractFloat
             a = puntoMedio
         end
         MaximoError = (b-a)/2 # El nuevo error que se generara con el intervalo modificado 
-        println([puntoMedio, MaximoError]) # Muestra las soluciones de cada interacion junto con el erro que se comete en cada una de ellas 
+        println([puntoMedio, MaximoError]) # Muestra las soluciones de cada interacion junto con el error que se comete en cada una de ellas 
         n = n +1
 
     end
