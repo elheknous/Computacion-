@@ -35,10 +35,12 @@ end
 f(x) = x^2  
 g(x) = (x^3)/sqrt(1+x) #1,2,8
 l(x) = exp(x^2) #0,1,10
+d(x) = exp(cos(x)^3)
 
-a = 1
-b = 2
-n = 8
+a = 0
+b = 2pi
+n = 10000
 
-sinson(g,a,b,n)
+@time sinson(d,a,b,n)
+
 grafica(g,a,b)
