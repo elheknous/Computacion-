@@ -8,7 +8,7 @@ int main(){
         i++;
     }
 
-    for (i = 0; i < 15; i++)
+    for (i = 1; i < 15; i++)
     {
         cout<<i<<endl;
     }
