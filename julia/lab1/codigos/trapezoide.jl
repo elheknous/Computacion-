@@ -14,7 +14,7 @@ end
 
 f(x) = exp(cos(x)^3) #Funcion
 @time ref = quad_trap(f,0,2π,10000);
-
+ref
 for n=2:5
     error = abs(quad_trap(f,0,2π,2^n) - ref)
     @printf("n=%3i, %4.2e\n", 2^n,error)

@@ -25,7 +25,7 @@ newton(g,gprima,0)
 #Ejemplo 2
 h(x) = x^x - 100
 hprima(x) = x^x*(1+log(x))
-newton(h,hprima,3,100)
+newton(h,hprima,3.5)
 
 #Ejemplo 3
 f(x) = exp(x) - sin(3*x) -2

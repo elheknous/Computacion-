@@ -23,3 +23,4 @@ end
 
 #Ejemplo 1
 biseccion(x -> exp(x) - sin(3*x) -2, 0,1)
+
